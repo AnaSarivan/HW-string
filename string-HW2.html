@@ -1,0 +1,22 @@
+
+<Script>
+    const str1 = "The cost of Samsung S20 is 1000EUR. But I could sell it with 899.90EUR. I am selling a playstation for 199.90USD. I am selling an HP Envy for 699EUR."
+
+    let res1 = str1.replace(/([0-9]+.[0-9]+)(EUR)/g, (m, g1, g2) => {
+        let amount = Math.round(g1 * 1.1)
+        //HW - round the sum
+        return `${amount}USD`;          
+        
+    })
+
+    //console.log(res1)
+
+    let res2 = res1.matchAll(/([0-9]+.[0-9]+)(USD)/g)
+
+    for( let r of res2) {
+       console.log(r)
+    }
+
+   
+     // whrite a function that gets this text and returns the sums ...?
+</Script>

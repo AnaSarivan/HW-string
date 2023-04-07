@@ -1,0 +1,32 @@
+<!--
+
+ HW3 - write a script that extracts email addresses and phone number from a text
+  
+-->
+
+<script>
+
+const string = `Lista cu adrese de email - ffggkfgkjd@gmail.com, jdhfkgkf@yahoo.com, eerfjkhhjgsd@mail.md`
+
+let emaillst = string.match(/([a-zA-Z0-9._+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+
+  /*  if (emaillst === null) {
+        // no Email Address Found
+    } else {
+         const uniqueEmail = Array.from(new Set(emaillst));
+         const finaluniqueEmail = [];
+         for(let i=0; i<=uniqueEmail.length; i++){
+            let characterIs = String(uniqueEmail[i]).charAt(String(uniqueEmail[i]).length - 1)
+            if(characterIs==='.'){
+                finaluniqueEmail.push(String(uniqueEmail[i].slice(0, -1)))
+            } else {
+                finaluniqueEmail.push(uniqueEmail[i]);
+                }
+            }
+        } */
+
+    console.log(emaillst)
+                //emaillst = finaluniqueEmail.join('\n').toLowerCase();
+                //console.log(matches[1]);
+
+</script>

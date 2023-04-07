@@ -1,0 +1,20 @@
+
+<script>
+    
+//    HW: for 1
+//    you have a text that contains info about diff amounts of money
+//    1. the amounts are with cents 100.30 ... 
+//    2. multiple currensies (EUR\ EURO \ USD ... $ ) -- refacerea sablonului...
+
+   const str = "The cost of Samsung EUROPIAN version S20 is 1000.20EUR. But I could sell it with 900EUR. I am selling a playstation for 199.90USD. I am selling an HP Envy for 699EURO or 14000MDL."
+   
+   let res = str.matchAll(/([0-9]+.[0-9]+)[(EUM)]/g)
+   // regEx - https://regex101.com/
+   //Cum se grupeaza RegEXP - dupa mai multe criterii {EURO sau USD sau MDL}?
+
+   for( let r of res) {
+       console.log(r)
+    }
+
+</script>
+
